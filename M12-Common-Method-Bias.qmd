@@ -1,0 +1,73 @@
+---
+title: "M12 Study Notes — Common Method Bias"
+author: "Georgia Monjarrez"
+subtitle: "IBM 6500 · Customer Insight Methods and Survey Research"
+format:
+  html:
+    embed-resources: true
+    toc: true
+    toc-title: "On this page"
+    theme: none
+header-includes: |
+  <style>
+  body { box-sizing: border-box; max-width: 52rem; margin: auto; padding: 2rem clamp(1rem, 5vw, 3rem); color: #1f2933; background: #fff; font: 1rem/1.6 system-ui, sans-serif; }
+  body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(10rem, 13rem); column-gap: 2rem; align-items: start; }
+  body > * { grid-column: 1 / -1; min-width: 0; }
+  #title-block-header { grid-column: 1; grid-row: 1; text-align: left; }
+  #title-block-header h1 { margin-top: 0; }
+  #TOC { grid-column: 2; grid-row: 1; font-size: .92rem; }
+  #TOC ul { margin: 0; padding-left: 1.2rem; }
+  @media (max-width: 620px) {
+    body { display: block; }
+    #TOC { margin-bottom: 1.5rem; }
+  }
+  h1, h2 { line-height: 1.2; }
+  h2 { margin-top: 2rem; }
+  a { color: #17596a; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: .6rem; border-bottom: 1px solid #cbd5da; vertical-align: top; }
+  th { background: #eaf3f4; }
+  </style>
+---
+
+## Key terms
+
+- **Method variance** comes from how a measure was collected. **Common method variance** is the part shared across measures.
+- **Method bias** is the resulting distortion. It can strengthen or weaken an observed relationship, and it can affect items differently.
+- In the studies summarized in Table 1, method factors accounted for **18%–32% of item variance** (Podsakoff et al., 2012, pp. 540–545).
+
+## Sources of bias
+
+| Source | What can happen |
+|---|---|
+| Same respondent | A tendency to agree, pick extreme ratings, or give socially desirable answers carries across items. |
+| Wording | Vague terms, double negatives, and two-part questions leave room for different interpretations. |
+| Scales and question order | Repeated anchors or nearby questions can prompt respondents to reuse earlier judgments. |
+
+## Survey design controls
+
+- Use different sources for measures when each source can capture its construct accurately.
+- If the same person answers both sets of questions, separate the measures by time or context. Pick a gap short enough that the underlying attitude or behavior is unlikely to change.
+- Pretest the wording, question order, and response options.
+
+## Statistical controls
+
+| Method | When to use it |
+|---|---|
+| Measured method factor or response style | You can measure a suspected source of bias, such as a tendency to agree. |
+| CFA marker variable | You can include a measure unrelated to the main constructs that may capture the same method effect. |
+| Common latent method factor | The source is unknown or unmeasured. The factor can also pick up variance from other traits. |
+| Instrumental variables | A valid instrument strongly predicts the affected predictor and is unrelated to the outcome equation’s error. |
+
+## Website usability example
+
+For the restaurant website, I’d have an observer record whether participants reach the reservation screen and ask participants to rate how easy the task felt afterward. If participants report both ease and success on the same survey, their overall impression of the site could influence both answers.
+
+## Reference
+
+Podsakoff, P. M., MacKenzie, S. B., & Podsakoff, N. P. (2012). Sources of method bias in social science research and recommendations on how to control it. *Annual Review of Psychology, 63*, 539–569. <https://doi.org/10.1146/annurev-psych-120710-100452>
+
+## Appendix
+
+- [GitHub repository](https://github.com/gmonjarrez/m12-common-method-bias)
+- [GitHub Pages](https://gmonjarrez.github.io/m12-common-method-bias/)
